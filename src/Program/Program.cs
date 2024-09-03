@@ -8,7 +8,7 @@ namespace Ucu.Poo.GameOfLife
     {
         static void Main(string[] args)
         {
-            Board board = new Board("C:\\Users\\leand\\RiderProjects\\PII_Game_OF_Life_E404\\src\\Program\\board.txt");
+            Board board = new Board("..\\..\\..\\..\\..\\assets\\board.txt");
 
             bool[,] b = board.GameBoard; //variable que representa el tablero
             int width = board.BoardWith;//variabe que representa el ancho del tablero
