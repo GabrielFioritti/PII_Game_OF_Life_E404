@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Text;
+using System.Text;      //librerias
 using System.Threading;
 
 namespace Ucu.Poo.GameOfLife
 {
-    class Program
+    class Program  //Clase creada con el objetivo de ejecutar el programa
     {
         static void Main(string[] args)
         {

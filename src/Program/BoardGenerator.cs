@@ -1,12 +1,12 @@
 
 
-using System.IO;
+using System.IO;        //Librerias
 
 namespace Ucu.Poo.GameOfLife;
 
-public class BoardGenerator
-{
-    public bool[,] generateBoardByTxt(string url)
+public class BoardGenerator     //Esta clase fue creada con el objetivo de crear el tablero por el hecho de tener esa
+{                               //unica responsabilidad cumple, el SRP
+    public bool[,] generateBoardByTxt(string url) //Genera el tablero dependiendo del .txt adjunto
     {
         string content = File.ReadAllText(url);
         string[] contentLines = content.Split('\n');

@@ -1,16 +1,16 @@
 namespace Ucu.Poo.GameOfLife;
 
-public class Board
+public class Board //Clase creada con el objetivo de actualizar el tablero mediante el cumpimiento de las reglas
 {
-    public Board(string url)
+    public Board(string url) //Constructor
     {
-        BoardGenerator boardGenerator = new BoardGenerator();
+        BoardGenerator boardGenerator = new BoardGenerator(); //Utilizando una instancia de BoardGenerator
         gameBoard = boardGenerator.generateBoardByTxt(url);
         boardWidth = gameBoard.GetLength(0);
         boardHeight = gameBoard.GetLength(1);
     }
     
-    private bool[,] gameBoard;
+    private bool[,] gameBoard;  //Atributos
     public bool[,] GameBoard
     {
         get { return gameBoard; }
@@ -25,7 +25,7 @@ public class Board
     private int boardHeight;
     public int BoardHeight
     {
-        get { return boardHeight; }
+        get { return boardHeight; } //Fin de atributos
     }
     
     public void nextGeneration()
